@@ -65,6 +65,12 @@ function initCountdowns() {
     valentinesDate = new Date(currentYear + 1, 1, 14, 0, 0, 0);
   }
 
+  // Initial update
+  updateCountdown(christmasDate, 'christmas-content', 'Christmas');
+  updateCountdown(newYearDate, 'newyear-content', 'New Year');
+  updateCountdown(winterDate, 'winter-content', 'Winter');
+  updateCountdown(valentinesDate, 'valentines-content', "Valentine's Day");
+
   // Update countdowns every second
   setInterval(() => {
     updateCountdown(christmasDate, 'christmas-content', 'Christmas');
@@ -72,12 +78,6 @@ function initCountdowns() {
     updateCountdown(winterDate, 'winter-content', 'Winter');
     updateCountdown(valentinesDate, 'valentines-content', "Valentine's Day");
   }, 1000);
-
-  // Initial update
-  updateCountdown(christmasDate, 'christmas-content', 'Christmas');
-  updateCountdown(newYearDate, 'newyear-content', 'New Year');
-  updateCountdown(winterDate, 'winter-content', 'Winter');
-  updateCountdown(valentinesDate, 'valentines-content', "Valentine's Day");
 }
 
 // Start countdowns when page loads
