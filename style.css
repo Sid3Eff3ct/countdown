@@ -25,7 +25,7 @@ header h1 {
 }
 
 .countdown-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
